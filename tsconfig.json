@@ -1,15 +1,11 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "lib": [],
+    "target": "es2017",
     "typeRoots": [
       "./node_modules/@types",
-      "./src/types"
+      "node_modules/ammojs-typed/ammo/ambient"
     ],
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"]
-    },
+    "baseUrl": ".",
     "resolveJsonModule": true,
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
@@ -26,7 +22,7 @@
     "esModuleInterop": true
   },
   "include": [
-    "./src/**/*"
+    "./**/*"
   ],
   "exclude": [
     "node_modules"
